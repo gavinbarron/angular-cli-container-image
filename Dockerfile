@@ -1,5 +1,7 @@
 FROM node:alpine
 
-RUN npm instll -g @angular/cli@1.0.0-rc.1
+LABEL authors="Gavin Barron<gavin.barron@gmail.com>"
 
-CMD /bin/bash
+RUN npm install -g @angular/cli@1.0.0-rc.1
+
+CMD /bin/sh
